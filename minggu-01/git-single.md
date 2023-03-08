@@ -1,7 +1,5 @@
 # Installasi Git Windows
 
-[[<< Kembali](minggu-01) ]
-
 1. Double click pada file download Git kemudian klik **Next** untuk melanjutkan installasi.
 
 ![01](images/1/1.png)
@@ -134,3 +132,6 @@ Unpacking objects: 100% (3/3), done.
 ![22](images/3/24.png)
 
 Setelah perintah ini, di direktori ```tekn-cloud-computing``` akan disimpan isi repo yang sama dengan di GitHub. Perbedaannya, di komputer lokal terdapat direktori ```.git``` yang digunakan secara internal oleh Git.
+
+
+### Mengelola Repo
