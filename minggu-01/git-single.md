@@ -174,20 +174,5 @@ Setelah melakukan satu atau beberapa hal diatas, lakukan push ke Repo GitHub. Co
 ![4](images/3/30.png)
 
 5. Buatlah **Pull Request** pada GitHub, dengan cara klik **Compare & pull request**.
-6. Setelah itu klik **Create pull request**, dan lakukan *merge* dengan **Merge Pull Request**.
 
-![6](images/3/31.png)
-Setelah membuat PR, PR tersebut bisa di-merge :
-![7](images/3/34.png)
-
-
-### Sinkronisasi
-Suatu saat, bisa saja terjadi kita menggunakan komputer lain dan mengedit repo melalui repo lokal di komputer lain, setelah itu pindah ke kamputer lain lagi. Saat itu, kita perlu melakukan sinkronisasi ke kemputer lokal. Perintah untuk sinkronisasi adalah:
-```
-$ git pull
-```
-
-###Membatalkan Perubahan
-
-1. Oastikan membuat perubahan pada *branch* atau cabang yang berbeda.
-2. 
+![4](images/3/30.png)
