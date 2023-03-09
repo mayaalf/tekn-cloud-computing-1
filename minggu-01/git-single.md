@@ -403,7 +403,7 @@ Repo yang dibuat bisa diletakkan pada account kita maupun berada pada suatu orga
 ![01](images/3/43.png)
 
 
-Membuat repository dengan command line
+### Membuat repository dengan command line
 
 ```
 echo "# playground" >> README.md
@@ -417,7 +417,7 @@ git push -u origin main
 
 ![0](images/3/44.png)
 
-Push repository dari command line
+### Push repository dari command line
 
 ```
 git remote add origin https://github.com/UTDI-TC/playground.git
@@ -427,6 +427,6 @@ git push -u origin main
 
 ![0](images/3/45.png)
 
-Clone
+### Clone
 
 ![0](images/3/46.png)
