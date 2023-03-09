@@ -135,3 +135,40 @@ Setelah perintah ini, di direktori ```tekn-cloud-computing``` akan disimpan isi 
 
 
 ### Mengelola Repo
+
+### Mengubah Isi - Push Tanpa Branching dan Merging
+
+Perubahan isi bisa terjadi karena satu atau kombinasi beberapa hal berikut:
+
+1. File dihapus
+2. File diedit
+3. Membuat file / direktori baru
+4. Menghapus direktori
+
+Setelah melakukan satu atau beberapa hal diatas, lakukan push ke Repo GitHub. Contohnya sebagai berikut:
+
+1. Buat file baru bernama README dengan ekstensi .md pada direktori Repo, lalu isikan "Test".
+
+![1](images/3/25.png)
+
+2. Setelah itu lakukan sinkronisasi dengan menggunakan _push to_ atau _sync_.
+
+![2](images/3/26.png)
+
+### Mengubah Isi dengan Branching dan Merging
+
+1. Buat cabang baru untuk menampung perubahan pada *Source Control* lalu **Create Branch** (more action > Branch) dan berikan nama cabang, saya memberi nama cabang tersebut "edit-readme-1".
+
+![1](images/3/27.png)
+
+2. Lakukan perubahan pada cabang "edit-readme-1", misalnya saya tambahkan sesuatu dalam file README lalu saya save filenya. Dapat dilihat pada file README terdapat logo M, artinya Modified atau terjadi perubahan pada file.
+
+![2](images/3/28.png)
+
+3. Setelah itu perubahannya akan kita commit dengan cara klik **Stage Changes** atau tombol +, lalu commit dengan klik tombol checklist dan berikan comment mengenai commit yang telah dilakukan.
+
+![3](images/3/29.png)
+
+4. Gunakan Publish Branch untuk meng-upload hasil perubahan yang dilakukan pada cabang baru tadi, di contoh ini nama cabang barunya adalah cabang "edit-readme-1".
+
+![4](images/3/30.png)
