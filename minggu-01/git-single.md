@@ -101,7 +101,7 @@ Langkah ini cukup dilakukan sekali saja, kecuali jika ingin melakukan perubahan 
 2. Clone repo kosong tersebut di komputer lokal
 3. Perintah berikutnya terkait dengan perubahan repo serta sinkronisasi antara GitHub dengan lokal.
 
-### Membuat Repo
+# Membuat Repo
 
 1. Klik tanda + pada bagian atas setelah login, pilih **New repository**
 
@@ -134,7 +134,7 @@ Unpacking objects: 100% (3/3), done.
 Setelah perintah ini, di direktori ```tekn-cloud-computing``` akan disimpan isi repo yang sama dengan di GitHub. Perbedaannya, di komputer lokal terdapat direktori ```.git``` yang digunakan secara internal oleh Git.
 
 
-### Mengelola Repo
+## Mengelola Repo
 
 ### Mengubah Isi - Push Tanpa Branching dan Merging
 
@@ -393,3 +393,11 @@ $
 ```
 
 ![03](images/3/42.png)
+
+
+
+## Mengelola Repo Sendiri di Organisasi
+
+Repo yang dibuat bisa diletakkan pada account kita maupun berada pada suatu organisasi. Organisasi bisa kita buat sendiri maupun kita dimasukkan menjadi anggota organisasi. Pada dasarnya, bagian ini sama dengan bagian sebelumnya, hanya saja, pada saat membuat repo Owner dari repo adalah organisasi seperti berikut ini:
+
+![01](images/3/43.png)
