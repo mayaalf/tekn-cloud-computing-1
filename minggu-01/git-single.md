@@ -189,5 +189,207 @@ $ git pull
 
 ### Membatalkan Perubahan
 
-1. OPstikan membuat perubahan pada *branch* atau cabang yang berbeda.
-2. 
+```
+$ git checkout -b edit-readme-2
+Switched to a new branch 'edit-readme-2'
+$ vim README.md
+$ cat README.md
+# My Awesome Project
+
+Ini isi proyek. Jadi agak kacau nih
+$ git checkout master
+M	README.md
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+$ cat README.md
+# My Awesome Project
+
+Ini isi proyek. Jadi agak kacau nih
+$ git branch -D edit-readme-2
+Deleted branch edit-readme-2 (was 7e546b0).
+$ git branch
+* master
+$ cat README.md
+# My Awesome Project
+
+Ini isi proyek. Jadi agak kacau nih
+$ git reset --hard
+HEAD is now at 7e546b0 Merge pull request #1 from oldstager/edit-readme-1
+$ cat README.md
+# My Awesome Project
+
+Ini isi proyek
+$
+```
+
+![01](images/3/36.png)
+
+### Undo Commit Terakhir
+
+Suatu saat, mungkin kita sudah terlanjur mem-push perubahan ke repo GitHub, setelah itu kita baru menyadari bahwa perubahan tersebut salah. Untuk itu, kita bisa melakukan ```git revert```.
+
+```
+$ cat README.md
+# My Awesome Project
+
+Ini isi proyek
+$ git log --oneline
+7e546b0 (HEAD -> master, origin/master, origin/HEAD) Merge pull request #1 from oldstager/edit-readme-1
+032d079 (origin/edit-readme-1) Add: isi README.md
+2ab2e28 Add: README.md
+8dd68d4 Initial commit
+$ vim README.md
+$ git add -A
+$ git commit -m "Add: contents"
+[master c55fd06] Add: contents
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+$ git push origin master 
+Username for 'https://github.com': oldstager
+Password for 'https://oldstager@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 335 bytes | 335.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/oldstager/awesome-project
+   7e546b0..c55fd06  master -> master
+$ vim README.md
+$  git add -A
+$  git commit -m "Add: contents - 2"
+[master fed7e79] Add: contents - 2
+ 1 file changed, 1 insertion(+)
+$ git push origin master
+Username for 'https://github.com': oldstager
+Password for 'https://oldstager@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 338 bytes | 338.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/oldstager/awesome-project
+   c55fd06..fed7e79  master -> master
+$ cat README.md
+# My Awesome Project
+
+Ini isi proyeka
+
+Ini isi 1
+
+Ini isi 2
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+$
+```
+
+![02](images/3/37.png)
+
+*push* ke repo GitHub
+
+```
+
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+$ git push origin master
+Username for 'https://github.com': oldstager
+Password for 'https://oldstager@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 347 bytes | 347.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/oldstager/awesome-project
+   fed7e79..f800ced  master -> master
+$ cat README.md
+# My Awesome Project
+
+Ini isi proyeka
+
+Ini isi 1
+
+$
+```
+Untuk kembali ke perubahan pada saat yang sudah lama, yang perlu dilakukan adalah melakukan ```git revert <posisi>``` kemudian mengedit secara manual kemudian push ke repo.
+
+```
+$ cat README.md
+# My Awesome Project
+
+Ini isi proyeka
+
+Ini isi 1
+
+Ini isi 2
+
+Ini isi 3
+$ git log --oneline
+b14810f (HEAD -> master, origin/master, origin/HEAD) Add: isi 3
+a7615fb Add: isi 2
+f800ced Revert "Add: contents - 2"
+fed7e79 Add: contents - 2
+c55fd06 Add: contents
+7e546b0 Merge pull request #1 from oldstager/edit-readme-1
+032d079 (origin/edit-readme-1) Add: isi README.md
+2ab2e28 Add: README.md
+8dd68d4 Initial commit
+$ git revert a7615fb
+error: could not revert a7615fb... Add: isi 2
+hint: after resolving the conflicts, mark the corrected paths
+hint: with 'git add <paths>' or 'git rm <paths>'
+hint: and commit the result with 'git commit'
+$
+```
+
+![03](images/3/39.png)
+
+Setelah itu, lanjutkan proses revert. Saat ```git revert --continue``` isikan pesan revert.
+
+```
+$ git add README.md
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+You are currently reverting commit a7615fb.
+  (all conflicts fixed: run "git revert --continue")
+  (use "git revert --abort" to cancel the revert operation)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   README.md
+
+$ git revert --continue
+[master dec93e1] Revert "Add: isi 2"
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+$ git push origin master
+Username for 'https://github.com': oldstager
+Password for 'https://oldstager@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 401 bytes | 401.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/oldstager/awesome-project
+   b14810f..dec93e1  master -> master
+$
+```
+
+![03](images/3/42.png)
