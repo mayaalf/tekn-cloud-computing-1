@@ -172,3 +172,7 @@ Setelah melakukan satu atau beberapa hal diatas, lakukan push ke Repo GitHub. Co
 4. Gunakan Publish Branch untuk meng-upload hasil perubahan yang dilakukan pada cabang baru tadi, di contoh ini nama cabang barunya adalah cabang "edit-readme-1".
 
 ![4](images/3/30.png)
+
+5. Buatlah **Pull Request** pada GitHub, dengan cara klik **Compare & pull request**.
+
+![4](images/3/30.png)
