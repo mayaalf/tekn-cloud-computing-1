@@ -10,7 +10,9 @@ Praktik dan Tugas praktikum kali ini membahas tentang Git memerlukan materi yang
 [Rangkuman Cloud Computing](rangkuman-cloud-computing.md)
 ## Tugas
 * [git-kolaborasi](git-kolaborasi.md)
-  4. [Kolaborasi](git-kolaborasi.md)
+
+4. [Kolaborasi](git-kolaborasi.md)
+
 * [README.md](README.md)
 
 
