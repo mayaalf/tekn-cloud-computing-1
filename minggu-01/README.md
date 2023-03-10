@@ -2,7 +2,7 @@
 Praktik dan Tugas praktikum kali ini membahas tentang Git memerlukan materi yang cukup banyak, yaitu :
 ## Praktik
 A.  [git-single.md](git-single.md)
-    1.[Instalasi Git](git-single.md)
+> 1.[Instalasi Git](git-single.md)
     2.[Konfigurasi Git](git-single.md)
     3.[Mengelola Repo Sendiri](git-single.md)
      * [Mengelola repo di account sendiri](git-single.md)
