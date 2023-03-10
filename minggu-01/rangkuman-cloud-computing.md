@@ -22,7 +22,7 @@ Contoh dari Cloud computing adalah Google Apps, Dropbox.
    Digunakan dalam CRM, ERP, Web COnferencing, grup chat, email game
 ## Model Penyebaran Teknologi CLoud
 ### Private 
-Infrastuktur cloud yang dilaksanakan oleh satu organisasi untuk memanajemen internal perusahaan
+Infrastuktur cloud yang dilaksanakan oleh satu organisasi untuk memanajemen internal perusahaan, dimana perusahaan akan membangun sistem dari dasar sampai penyempurnaan layanan serta pemeliharaan. Private model ini biasanya memerlukan biaya yang sangat besar bagi suatu perusahaan.
 ### Public
 Layanan Cloud yang digunakan untuk publik internet yang ditawarkan untuk layanan berbayar atau gratis
 ### Hybrid
