@@ -2,17 +2,14 @@
 Praktik dan Tugas praktikum kali ini membahas tentang Git memerlukan materi yang cukup banyak, yaitu :
 ## Praktik
 * [git-single.md](git-single.md)
-1. [Instalasi Git](git-single.md)
-2. [Konfigurasi Git](git-single.md) 
-3. [Mengelola Repo Sendiri](git-single.md)
+  1. [Instalasi Git](git-single.md)
+  2. [Konfigurasi Git](git-single.md) 
+  3. [Mengelola Repo Sendiri](git-single.md)
    * [Mengelola repo di account sendiri](git-single.md)
    * [Mengelola repo di organisasi](git-single.md)
 [Rangkuman Cloud Computing](rangkuman-cloud-computing.md)
 ## Tugas
 * [git-kolaborasi](git-kolaborasi.md)
-
-4. [Kolaborasi](git-kolaborasi.md)
-
 * [README.md](README.md)
 
 
