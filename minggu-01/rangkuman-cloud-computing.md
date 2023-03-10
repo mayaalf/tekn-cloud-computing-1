@@ -1,4 +1,4 @@
-#Rangkuman Teknologi CLoud https://en.wikipedia.org/wiki/Cloud_computing
+# [Rangkuman Teknologi CLoud](https://en.wikipedia.org/wiki/Cloud_computing)
 
 **Teknologi Cloud** adalah pemanfaatan teknologi komputer dan pengembangan internet berbasis *cloud* yang sering digambarkan dengan diagram jaringan komputer.
 Menurut *IEEE* Cloud Computing merupakan paradigma informasi secara permanen tersimpan di server internet dan tersimpan sementara di lokal komputer user.
