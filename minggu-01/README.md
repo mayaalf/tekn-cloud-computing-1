@@ -13,14 +13,14 @@ Susunan direktori `minggu-01` :
 ```
 minggu-01
 ├── images
-    ├──1
-    ├──2
-    ├──3
-    ├──4
-    ├──25.1.png
-    ├──25.png
-    ├──26.png
-    ├──27.png
+|   ├──1
+|   ├──2
+|   ├──3
+|   ├──4
+|   ├──25.1.png
+|   ├──25.png
+|   ├──26.png
+|   └── 27.png
 ├── git-kolaborasi.md
 ├── git-single.md
 ├── rangkuman-cloud-computing.md
