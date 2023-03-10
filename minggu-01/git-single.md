@@ -1,5 +1,7 @@
 # Installasi Git Windows
 
+[ [<< Kembali](README.md) ]
+
 1. Double click pada file download Git kemudian klik **Next** untuk melanjutkan installasi.
 
 ![01](images/1/1.png)
