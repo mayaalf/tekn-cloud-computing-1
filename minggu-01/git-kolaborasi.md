@@ -84,5 +84,6 @@ Sebelum melakukan perubahan, pastikan:
 ![12](images/4/10.png)
 
 9. Sinkronkan semua repo (lokal maupun GitHub kontributor)
+
 ![13](images/4/11.png)
 
