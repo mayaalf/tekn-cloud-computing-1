@@ -27,15 +27,15 @@ Kontributor harus mem-fork repo upstream author sehingga di repo kontributor mun
 2. Akses repo yang akan di-fork: https://github.com/mayaalf/playground
 3. Pada sisi kanan atas, klik Fork:
 
-![03](images/04/1.png)
+![03](images/4/1.png)
 
 4. Pilih akan ditempatkan di accound mana
 
-![04](images/04/2.png)
+![04](images/4/2.png)
 
 5. Setelah proses, repo dari *upstream author* sudah berada di account GitHub (kontributor) 
 
-![05](images/04/3.png)
+![05](images/4/3.png)
 
 Setelah proses tersebut, clone di komputer lokal
 
@@ -43,7 +43,7 @@ Setelah proses tersebut, clone di komputer lokal
 
 Repo ```origin``` sudah dituliskan konfigurasinya pada saat melakukan proses clone dari repo kontributor. Konfigurasi repo *upstream* harus dibuat dan kemudian menambahkan remote upstream
 
-![07](images/04/5.png)
+![07](images/4/5.png)
 
 
 ## Mengirimkan Pull Request
@@ -64,25 +64,25 @@ Sebelum melakukan perubahan, pastikan:
 2. Setelah melakukan perubahan-perubahan, pastikan bahwa isi repo lokal tersinkronisasi dengan repo dari upstream author.
 3. Cara melakukan sinkronisasi:
 
-![08](images/04/6.png)
+![08](images/4/6.png)
 
 4. Lakukan perubahan-perubahan, setelah itu push ke **origin** (milik kontributor)
 
-![09](images/04/7.png)
+![09](images/4/7.png)
 
 5. Setelah itu buka halaman Web repo kontributor https://github.com/UTDI-TC/playground-1. Pada halaman tersebut akan ditampilkan isi yang di-push
 
-![10](images/04/8.png)
+![10](images/4/8.png)
 
 6. Pilih ```compare and pull request```, kemudian isikan PR dan klik ```Create pull request```.
 
-![11](images/04/9.png)
+![11](images/4/9.png)
 
 7. Pada repo upstream author, muncul angka 1 (artinya jumlahnya 1) pada ```Pull requests``` di bagian atas.
 8. *Upstream author* bisa menyetujui setelah melakukan review: klik pada ```Pull requests```, akan muncul PR dengan message seperti yang ditulis oleh kontributor (Add: contributor). Klik pada PR tersebut, review kemudian klik ```Merge pull request``` diikuti dengan ```Confirm merge```. Setelah itu, status akan berubah menjadi ```Merged```.
 
-![12](images/04/10.png)
+![12](images/4/10.png)
 
 9. Sinkronkan semua repo (lokal maupun GitHub kontributor)
-![13](images/04/11.png)
+![13](images/4/11.png)
 
