@@ -1,17 +1,17 @@
 # Pengerjaan Praktik dan Tugas Praktikum Minggu-01
 Praktik dan Tugas praktikum kali ini membahas tentang Git memerlukan materi yang cukup banyak, yaitu :
 ## Praktik
-A.  [git-single.md](git-single.md)
-    1.[Instalasi Git](git-single.md) *sepatate paragraph*
-    2.[Konfigurasi Git](git-single.md)
-    3.[Mengelola Repo Sendiri](git-single.md)
+* [git-single.md](git-single.md)
+    1.[Instalasi Git](git-single.md)
+    2.[Konfigurasi Git](git-single.md) 
+    3.[Mengelola Repo Sendiri](git-single.md) <Enter>
      * [Mengelola repo di account sendiri](git-single.md)
      * [Mengelola repo di organisasi](git-single.md)
-B.  [Rangkuman Cloud Computing](rangkuman-cloud-computing.md)
+* [Rangkuman Cloud Computing](rangkuman-cloud-computing.md)
 ## Tugas
-A.  [git-kolaborasi](git-kolaborasi.md)
+* [git-kolaborasi](git-kolaborasi.md)
     4.[Kolaborasi](git-kolaborasi.md)
- B. [README.md](README.md)
+* [README.md](README.md)
 
 
 Susunan direktori `minggu-01` :
