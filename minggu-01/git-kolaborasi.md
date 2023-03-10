@@ -39,7 +39,7 @@ Kontributor harus mem-fork repo upstream author sehingga di repo kontributor mun
 
 Setelah proses tersebut, clone di komputer lokal
 
-![06](images/04/4.png)
+![06](images/4/4.png)
 
 Repo ```origin``` sudah dituliskan konfigurasinya pada saat melakukan proses clone dari repo kontributor. Konfigurasi repo *upstream* harus dibuat dan kemudian menambahkan remote upstream
 
