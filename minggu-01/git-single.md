@@ -119,7 +119,7 @@ Setelah langkah-langkah tersebut repo akan dibuat dan bisa diakses menggunakan p
 
 ![21](images/3/23-1.png)
 
-###Clone Repo
+### Clone Repo
 Proses ```clone``` untuk duplikasi remote repo di GitHub ke komputer lokal, perintah yang digunakan :
 ```
 git clone https://github.com/mayaalf/tekn-cloud-computing
